@@ -42,7 +42,7 @@ void Ex3(char *str){
 		}
 	}
    
-	printf("Shorgest word: ");
+	printf("Shortgest word: ");
 	for(i=e-Min;i<=e-1;i++){
 		printf("%c",str[i]);
 	}
