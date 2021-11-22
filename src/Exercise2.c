@@ -14,7 +14,8 @@ Ex:
 
 void Ex2(int n, char *str[]){
 	//Your codes here
-	
+	int i,j,k;
+	printf("%c ",*str[1]);
 }
 
 int main(int argc, char *argv[]) {
