@@ -15,9 +15,9 @@ Ex:
 
 void Ex3(char *str){
 	int i,j,e,h;
-	char *t="h";
-	int Min=10;
-	int Max=0;
+	
+	int Min=100;
+	int Max=1;
 	j=0;
 	e=0;
 	
@@ -51,7 +51,7 @@ void Ex3(char *str){
  printf("\n");
 	
 	printf("Longest word: ");
-	for(j=h-Max;j<h-1;++j){
+	for(j=h-Max;j<=h-1;++j){
 		printf("%c", str[j]);
 	}
 
