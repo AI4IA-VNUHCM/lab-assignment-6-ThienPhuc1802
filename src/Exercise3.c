@@ -22,15 +22,15 @@ void Ex3(char *str){
 	e=0;
 	
 	
-	for (i=0;i<100;i++){
+	for (i=0;i<strlen(str);i++){
 
-		if (str[i] == ' '){
+		if (str[i] == ' '|| str[i] == '\0'){
 			if (Min>j){
 				
 				Min = j;
 				e=i;
 			}
-			if(Max<j){
+			else if(Max<j){
 				Max=j;
 				h=i;
 
@@ -43,7 +43,7 @@ void Ex3(char *str){
 	}
    
 	printf("Shorgest word: ");
-	for(i=e-Min;i<=e;i++){
+	for(i=e-Min;i<=e-1;i++){
 		printf("%c",str[i]);
 	}
 	
@@ -51,7 +51,7 @@ void Ex3(char *str){
  printf("\n");
 	
 	printf("Longest word: ");
-	for(j=h-Max+1;j<h;++j){
+	for(j=h-Max;j<h-1;++j){
 		printf("%c", str[j]);
 	}
 
