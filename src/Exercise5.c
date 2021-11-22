@@ -17,23 +17,23 @@ Ex:
 
 void Ex5(char *str){
 	//Your codes here
-	int i,j,k;
-	j=0;
-	for (i=0;i<(strlen(str)/2);i++){
-		if(str[i] != str[strlen(str)-i-1]){
-		j=1;
+	int i = 0, mark=0;
+	while(str[i++] != '\0')
+	{
+		mark++;
+	}
+	for(int i = 0; i <= (mark / 2) - 1; i++){
+		if(!(str[i] + 1 == str[mark - 1 - i] || str[i] + 2 == str[mark - 1 - i]))
+		{
+			puts("Invalid!");
+			return;
 		}
 	}
-	if (j==0){
-		printf("valid!");
-	}
-	else{
-		printf("invalid!");
-	}
+	puts("Valid!");
+}
 
 
 	
-}
 
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
