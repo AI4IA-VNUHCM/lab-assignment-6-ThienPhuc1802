@@ -62,11 +62,11 @@ void Ex1(int n){
 			}
 			else if (j==2)
 			{
-				printf(" two hundred ");
+				printf("two hundred ");
 			}
 			else if (j==3)
 			{
-				printf(" three hundred ");
+				printf("three hundred ");
 			}
 			else if (j==4)
 			{
@@ -110,7 +110,7 @@ void Ex1(int n){
 				
 				else if (n==2)
 			{
-				printf(" twelve ");
+				printf("twelve ");
 			}
 			else if (n==3)
 			{
@@ -141,7 +141,7 @@ void Ex1(int n){
 			}
 			else if (j==2)
 			{
-				printf(" twenty ");
+				printf("twenty ");
 			}
 			else if (j==3)
 			{
@@ -171,7 +171,7 @@ void Ex1(int n){
 			{
 				printf("ninety");
 			}
-			n=n-(j*100);
+			n=n-(j*10);
 			
 		}
 		else if (n>0)
@@ -190,7 +190,7 @@ void Ex1(int n){
 			}
 			else if (n==3)
 			{
-				printf(" three ");
+				printf("three ");
 			}
 			else if (n==4)
 			{
