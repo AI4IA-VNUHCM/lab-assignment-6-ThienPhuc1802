@@ -19,7 +19,6 @@ void Ex5(char *str){
 	//Your codes here
 	int i,j,k;
 	j=0;
-	printf("%c ",str[strlen(str)-1]);
 	for (i=0;i<(strlen(str)/2);i++){
 		if(str[i] != str[strlen(str)-i-1]){
 		j=1;
