@@ -22,7 +22,7 @@ void Ex3(char *str){
 	e=0;
 	
 	
-	for (i=0;i<strlen(str);i++){
+	for (i=0;i<=strlen(str);i++){
 
 		if (str[i] == ' '|| str[i] == '\0'){
 			if (Min>j){
