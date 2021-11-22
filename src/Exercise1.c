@@ -11,13 +11,14 @@
 #include <math.h>
 
 void Ex1(int n){
+   int d = n / 1000;
+   int c = (n-d*1000)/100 ;
 
-	int a = n % 10;
+	
   
-  int b = n / 10;
+  int b = (n-d*1000-c*100)/10;
 
-  int c = (n / 100) % 10;
-  int d = n / 1000;
+  	int a = n-d*1000-b*10-c*100;
  
     switch(d){
       case 1: printf("one thousand ");break;
