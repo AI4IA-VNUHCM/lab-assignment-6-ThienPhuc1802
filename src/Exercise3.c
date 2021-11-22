@@ -14,7 +14,48 @@ Ex:
 #include <string.h>
 
 void Ex3(char *str){
-	//Your codes here
+	int i,j,e,h;
+	
+	int Min=100;
+	int Max=1;
+	j=0;
+	e=0;
+	
+	
+	for (i=0;i<=strlen(str);i++){
+
+		if (str[i] == ' '|| str[i] == '\0'){
+			if (Min>j){
+				
+				Min = j;
+				e=i;
+			}
+			else if(Max<j){
+				Max=j;
+				h=i;
+
+			}
+			j=0;
+		}
+		else{
+			j++;
+		}
+	}
+   
+	printf("Shortest word: ");
+	for(i=e-Min;i<=e-1;i++){
+		printf("%c",str[i]);
+	}
+	
+
+ printf("\n");
+	
+	printf("Longest word: ");
+	for(j=h-Max;j<=h-1;++j){
+		printf("%c", str[j]);
+	}
+
+
 	
 }
 

@@ -15,6 +15,21 @@ Ex:
 
 void Ex4(char *str){
 	//Your codes here
+	int j = 0;
+	int i;
+	int k;
+	for( i = 0; i < strlen(str); i++){
+		if(str[i] != ' '){
+			printf("%c", str[i]);
+			j = 0;
+		}
+		if(str[i] == ' '){
+			if(j == 0){ 
+			printf(" ");
+			}
+			j++;
+		}
+	}
 	
 }
 
