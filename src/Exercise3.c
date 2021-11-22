@@ -16,13 +16,13 @@ Ex:
 void Ex3(char *str){
 	int i,j,e,h;
 	char *t="h";
-	int Min=2;
+	int Min=10;
 	int Max=0;
 	j=0;
-	e=2;
+	e=0;
 	
 	
-	for (i=0;i<100;i++){
+	for (i=0;i<48;i++){
 
 		if (str[i] == ' '){
 			if (Min>j){
@@ -41,14 +41,15 @@ void Ex3(char *str){
 			j++;
 		}
 	}
-
+    printf("%d ",e);
 	printf("Shorgest word: ");
-	for(i=e-Min-1;i<e;i++){
+	for(i=e-Min;i<=e;i++){
 		printf("%c",str[i]);
 	}
 	
 
 	printf("\n");
+	printf("%d ",Max);
 	printf("Longest word: ");
 	for(j=h-Max-1;j<h;++j){
 		printf("%c", str[j]);
