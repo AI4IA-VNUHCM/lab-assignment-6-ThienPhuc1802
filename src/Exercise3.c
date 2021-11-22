@@ -51,7 +51,7 @@ void Ex3(char *str){
 	printf("\n");
 	
 	printf("Longest word: ");
-	for(j=h-Max-1;j<h;++j){
+	for(j=h-Max;j<=h;++j){
 		printf("%c", str[j]);
 	}
 
