@@ -43,14 +43,14 @@ void Ex3(char *str){
 	}
 
 	printf("Shorgest word: ");
-	for(i=e-Min;i<e;i++){
+	for(i=e-Min-1;i<e;i++){
 		printf("%c",str[i]);
 	}
 	
 
 	printf("\n");
 	printf("Longest word: ");
-	for(j=h-Max;j<=h;++j){
+	for(j=h-Max-1;j<h;++j){
 		printf("%c", str[j]);
 	}
 
