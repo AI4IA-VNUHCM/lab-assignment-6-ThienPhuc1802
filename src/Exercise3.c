@@ -22,7 +22,7 @@ void Ex3(char *str){
 	e=2;
 	
 	
-	for (i=0;i<48;i++){
+	for (i=0;i<100;i++){
 
 		if (str[i] == ' '){
 			if (Min>j){
@@ -41,7 +41,7 @@ void Ex3(char *str){
 			j++;
 		}
 	}
-	printf("\n");
+
 	printf("Shorgest word: ");
 	for(i=e-Min;i<e;i++){
 		printf("%c",str[i]);
